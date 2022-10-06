@@ -10,7 +10,11 @@ public class Door : MonoBehaviour
     private void OnTriggerEnter(Collider other) {
         if(other.CompareTag("Player")) {
             if(!locked){
-                SceneManager.LoadScene("SampleScene 1"); 
+                SceneManager.LoadScene("ballLevel"); 
+            } else {
+                if(UpdateScore.score >= 4) {
+                    SceneManager.LoadScene("ballLevel"); 
+                }
             }
         }
     }

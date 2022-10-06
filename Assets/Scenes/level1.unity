@@ -976,6 +976,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ebdc3c8f9e42f46cdb85e6cf5b0c91df, type: 2}
+    - target: {fileID: 2713396958555785480, guid: 035ce2ef54309fa428587601073ce673, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5769264761170845148, guid: 035ce2ef54309fa428587601073ce673, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -2108,6 +2112,10 @@ PrefabInstance:
     - target: {fileID: 2409608893326719722, guid: 8686a6abb43be4389a55b4268d25fe94, type: 3}
       propertyPath: m_Name
       value: Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409608893326719723, guid: 8686a6abb43be4389a55b4268d25fe94, type: 3}
+      propertyPath: locked
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2409608893326719727, guid: 8686a6abb43be4389a55b4268d25fe94, type: 3}
       propertyPath: m_RootOrder

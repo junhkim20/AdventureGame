@@ -8,7 +8,7 @@ public class PickUpItem : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        pickupSound.Play();
+        //pickupSound.Play();
         //UpdateScore.score ++;
         Destroy(gameObject);
     }

@@ -71,6 +71,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Key
       objectReference: {fileID: 0}
+    - target: {fileID: 5901893356585517859, guid: 76499b3d32ae76546b135c3968538e6f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ebdc3c8f9e42f46cdb85e6cf5b0c91df, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76499b3d32ae76546b135c3968538e6f, type: 3}
 --- !u!1 &6582955436192040806 stripped
@@ -104,7 +108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d5a83550ff5cf549ac169fdf990e5d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickupSound: {fileID: 0}
+  pickupSound: {fileID: 4873268293294191187, guid: e7339b8e763c14d1d8f9b9cca575e72f, type: 3}
 --- !u!114 &1663467925
 MonoBehaviour:
   m_ObjectHideFlags: 0

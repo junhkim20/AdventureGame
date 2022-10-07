@@ -14,4 +14,9 @@ public class EndGame : MonoBehaviour
     {
         SceneManager.LoadScene("Title Screen");
     }
+
+    public void RetryLevel()
+    {
+        SceneManager.LoadScene("ballLevel");
+    }
 }

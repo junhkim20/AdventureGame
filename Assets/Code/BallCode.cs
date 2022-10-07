@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement; 
 
 public class BallCode : MonoBehaviour
 {
@@ -42,6 +43,11 @@ public class BallCode : MonoBehaviour
             Object.Destroy(collision.gameObject, 3);
             Instantiate(key, new Vector3(0, 1, -20), transform.rotation);
             Destroy(gameObject, 3);
+        }
+
+        else if (collision.collider.gameObject.CompareTag("DeathPlane"))
+        {
+            SceneManager.LoadScene("YouLose");
         }
     }
 }

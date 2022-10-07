@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SpikesAndPlatforms.unity
     guid: ee90dfd36ecce8049822501df370e4c2
+  - enabled: 1
+    path: Assets/Scenes/Found Sister.unity
+    guid: 4afaff8906941f740afc16609b1573f7
   m_configObjects: {}

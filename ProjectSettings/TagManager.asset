@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Catcher
   - DeathPlane
+  - Terrain
   layers:
   - Default
   - TransparentFX

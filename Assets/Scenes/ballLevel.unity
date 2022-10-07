@@ -851,7 +851,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2409608893326719723, guid: 8686a6abb43be4389a55b4268d25fe94, type: 3}
       propertyPath: nextScene
-      value: Title Screen
+      value: End Screen
       objectReference: {fileID: 0}
     - target: {fileID: 2409608893326719723, guid: 8686a6abb43be4389a55b4268d25fe94, type: 3}
       propertyPath: scoreNeeded

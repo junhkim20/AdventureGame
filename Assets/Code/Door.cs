@@ -6,14 +6,16 @@ using UnityEngine.SceneManagement;
 public class Door : MonoBehaviour
 {
     public bool locked = false; 
+    public string nextScene;
+    public float scoreNeeded = 0f;
 
     private void OnTriggerEnter(Collider other) {
         if(other.CompareTag("Player")) {
             if(!locked){
-                SceneManager.LoadScene("ballLevel"); 
+                SceneManager.LoadScene(nextScene); 
             } else {
-                if(UpdateScore.score >= 4) {
-                    SceneManager.LoadScene("ballLevel"); 
+                if(UpdateScore.score >= scoreNeeded) {
+                    SceneManager.LoadScene(nextScene); 
                 }
             }
         }

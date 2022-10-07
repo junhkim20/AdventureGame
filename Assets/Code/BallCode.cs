@@ -6,6 +6,7 @@ public class BallCode : MonoBehaviour
 {
     // Start is called before the first frame update
     AudioSource aud;
+    AudioSource keySpawnAud;
     public GameObject key;
     bool respawn = true;
     void Start()
@@ -24,7 +25,6 @@ public class BallCode : MonoBehaviour
                 respawn = false;
             }
         }
-        print(transform.position.y);
         if (transform.position.y < -150)
         {
             transform.position = new Vector3(0, 30, -34);
@@ -37,9 +37,11 @@ public class BallCode : MonoBehaviour
     {
         if (collision.collider.gameObject.CompareTag("Catcher"))
         {
+            keySpawnAud = collision.gameObject.GetComponent<AudioSource>();
+            keySpawnAud.Play();
+            Object.Destroy(collision.gameObject, 3);
             Instantiate(key, new Vector3(0, 1, -20), transform.rotation);
-            Object.Destroy(collision.gameObject);
-            Destroy(gameObject);
+            Destroy(gameObject, 3);
         }
     }
 }
